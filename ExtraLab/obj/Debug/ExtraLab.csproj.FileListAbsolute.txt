@@ -1,0 +1,7 @@
+c:\users\skeletor\source\repos\ExtraLab\ExtraLab\bin\Debug\ExtraLab.exe.config
+c:\users\skeletor\source\repos\ExtraLab\ExtraLab\bin\Debug\ExtraLab.exe
+c:\users\skeletor\source\repos\ExtraLab\ExtraLab\bin\Debug\ExtraLab.pdb
+c:\users\skeletor\source\repos\ExtraLab\ExtraLab\obj\Debug\ExtraLab.csprojResolveAssemblyReference.cache
+c:\users\skeletor\source\repos\ExtraLab\ExtraLab\obj\Debug\ExtraLab.csproj.CoreCompileInputs.cache
+c:\users\skeletor\source\repos\ExtraLab\ExtraLab\obj\Debug\ExtraLab.exe
+c:\users\skeletor\source\repos\ExtraLab\ExtraLab\obj\Debug\ExtraLab.pdb
