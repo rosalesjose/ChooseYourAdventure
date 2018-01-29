@@ -12,15 +12,20 @@ namespace ExtraLab
         static bool RunApplication = true;
 
         static void Main(string[] args)
-        {     
-            Console.WriteLine("Choose Your Own Adventure: Forest"); //TODO: Outer Space, Cave, Mountains, Ocean, City
-            
-            string Name = ReadUserInput("\nEnter your name.");
+        {                 
+            Console.Title = "Choose Your Own Adventure: Forest Breeze"; //TODO: Outer space, Cave, Mountains, Ocean, City
+               
+            string Name = ReadUserInput("What's your name?");
             Console.Clear();
             string FirstSkill = FirstSkills($"Pick a skill {Name}!\n[1] Archery\t[2] Baking");
+            Console.Clear();
+            string SecondSkill = SecondSkills("It's pretty dangerous out there. Pick another skill.\n" +
+                                              "[3] Making jewlery\t[4] Poetry");
+            Console.Clear();
+            Console.WriteLine("You chose {0} and {1}!\nAlright, {2} do you want to continue " +
+                              "or choose different skills?", FirstSkill, SecondSkill, Name);
+            Console.WriteLine("[Y] Yes, continue.\t[N] Wait, I want to change my skills.");
             
-            Console.WriteLine("You chose: " + FirstSkill);            
-           
         }
         public static string ReadUserInput(string UserPrompt)
         {
@@ -46,11 +51,13 @@ namespace ExtraLab
             if (Archery.IsMatch(Choice))
             {
                 Console.WriteLine("Archery!");
+                Choice = "archery";
                 return Choice;
             }
             else if (Baking.IsMatch(Choice))
             {
                 Console.WriteLine("Baking!");
+                Choice = "baking";
                 return Choice;
             }
             Console.Clear();
@@ -68,11 +75,13 @@ namespace ExtraLab
             if (MakingJewlery.IsMatch(Choice))
             {
                 Console.WriteLine("Making jewlery!");
+                Choice = "making jewlery";
                 return Choice;
             }
             else if (Poetry.IsMatch(Choice))
             {
                 Console.WriteLine("Poetry!");
+                Choice = "poetry";
                 return Choice;
             }
             Console.Clear();
